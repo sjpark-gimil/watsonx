@@ -1,0 +1,8 @@
+    <script src="/js/common.js"></script>
+    <% if (typeof scripts !== 'undefined' && scripts.length > 0) { %>
+        <% scripts.forEach(function(script) { %>
+            <script src="<%= script %>" type="module"></script>
+        <% }); %>
+    <% } %>
+</body>
+</html>

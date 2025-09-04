@@ -1,0 +1,11 @@
+
+<h2>All Tutorials</h2>
+<ul class="cards">
+  <% items.forEach(it => { %>
+  <li>
+    <a href="/<%= lang %>/docs/<%= it.slug %>"><strong><%= it.title %></strong></a>
+    <div><%= it.summary %></div>
+    <small><%= it.product %> • v<%= it.version %> • <%= it.level %> • <%= it.est_minutes %>m</small>
+  </li>
+  <% }) %>
+</ul>

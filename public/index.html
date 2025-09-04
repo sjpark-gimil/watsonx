@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watsonx Tutorials</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="fas fa-robot"></i>
+                    <span>watsonx.ai</span>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <div class="nav-section">
+                    <div class="nav-section-title">시작하기</div>
+                    <ul>
+                        <li class="active"><a href="/"><i class="fas fa-home"></i> 홈</a></li>
+                        <li><a href="/setup"><i class="fas fa-sign-in-alt"></i> 설치 가이드</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <div class="nav-section-title">튜토리얼</div>
+                    <ul>
+                        <li><a href="/tutorials/first-project"><i class="fas fa-code"></i> 첫 번째 프로젝트</a></li>
+                        <li><a href="/tutorials/data-analysis"><i class="fas fa-chart-line"></i> 데이터 분석</a></li>
+                        <li><a href="/tutorials/model-training"><i class="fas fa-brain"></i> 모델 학습</a></li>
+                        <li><a href="/tutorials/model-deployment"><i class="fas fa-cogs"></i> 모델 배포</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <div class="nav-section-title">리소스</div>
+                    <ul>
+                        <li><a href="/lexicon"><i class="fas fa-book"></i> AI 용어사전</a></li>
+                        <li><a href="/documentation"><i class="fas fa-file-alt"></i> 문서</a></li>
+                        <li><a href="/api-reference"><i class="fas fa-code"></i> API 레퍼런스</a></li>
+                        <li><a href="/community"><i class="fas fa-comments"></i> 커뮤니티</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="튜토리얼 검색...">
+                </div>
+                <div class="user-actions">
+                    <button class="btn btn-primary" id="signInBtn">로그인</button>
+                </div>
+            </header>
+
+            <div class="content-area">
+                <h1>watsonx.ai 튜토리얼에 오신 것을 환영합니다</h1>
+                <p class="subtitle">IBM의 watsonx.ai 플랫폼으로 AI 모델을 구축, 학습, 배포하는 방법을 배워보세요</p>
+                
+                <div class="search-container">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="tutorialSearch" placeholder="튜토리얼 검색...">
+                    </div>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-category="all">전체</button>
+                        <button class="filter-btn" data-category="beginner">초보자</button>
+                        <button class="filter-btn" data-category="intermediate">중급자</button>
+                        <button class="filter-btn" data-category="advanced">고급</button>
+                    </div>
+                </div>
+
+                <div class="cards-container" id="tutorialsContainer">
+                    <!-- Tutorial cards will be loaded here -->
+                </div>
+
+                <div class="recent-updates">
+                    <h2>최신 업데이트</h2>
+                    <div class="update-item">
+                        <div class="update-badge">New</div>
+                        <div class="update-content">
+                            <h4>새로운 모델: watsonx-granite-20b</h4>
+                            <p>향상된 성능과 정확도를 자랑하는 최신 모델이 베타 버전으로 출시되었습니다.</p>
+                            <span class="update-date">2일 전</span>
+                        </div>
+                    </div>
+                    <div class="update-item">
+                        <div class="update-badge">Updated</div>
+                        <div class="update-content">
+                            <h4>API 문서 개선</h4>
+                            <p>새로운 예제와 개선된 내비게이션으로 API 문서가 업데이트되었습니다.</p>
+                            <span class="update-date">1주 전</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

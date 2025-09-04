@@ -1,0 +1,9 @@
+{
+    "title": "Data Scientist Path",
+    "steps": [
+      { "slug": "ai/intro-to-foundation-models" },
+      { "slug": "ai/prompt-engineering-basics" },
+      { "slug": "ai/evaluate-and-iterate" }
+    ]
+  }
+  

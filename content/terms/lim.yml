@@ -1,0 +1,4 @@
+id: llm
+term: Large Language Model
+aliases: ["LLM", "LLMs", "foundation model"]
+short: "Neural network trained on massive text to perform language tasks."

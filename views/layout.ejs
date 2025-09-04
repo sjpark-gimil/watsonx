@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <%- include('partials/head') %>
+  <body>
+    <div class="app-container">
+      <%- include('partials/sidebar') %>
+      <main class="main">
+        <%- body %>
+      </main>
+    </div>
+    <%- include('partials/footer') %>
+    <script src="https://unpkg.com/minisearch@7.1.0/dist/umd/index.min.js"></script>
+    <script src="/public/js/progress.js" defer></script>
+    <script src="/public/js/search.js" defer></script>
+    <script src="/public/js/term-popover.js" defer></script>
+  </body>
+</html>
+
+

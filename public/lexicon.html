@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 용어사전 - Watsonx 튜토리얼</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="fas fa-robot"></i>
+                    <span>watsonx.ai</span>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <div class="nav-section">
+                    <div class="nav-section-title">시작하기</div>
+                    <ul>
+                        <li><a href="/"><i class="fas fa-home"></i> 홈</a></li>
+                        <li><a href="/setup"><i class="fas fa-sign-in-alt"></i> 설치 가이드</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <div class="nav-section-title">튜토리얼</div>
+                    <ul>
+                        <li><a href="/tutorials/first-project"><i class="fas fa-code"></i> 첫 번째 프로젝트</a></li>
+                        <li><a href="/tutorials/data-analysis"><i class="fas fa-chart-line"></i> 데이터 분석</a></li>
+                        <li><a href="/tutorials/model-training"><i class="fas fa-brain"></i> 모델 학습</a></li>
+                        <li><a href="/tutorials/model-deployment"><i class="fas fa-cogs"></i> 모델 배포</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <div class="nav-section-title">리소스</div>
+                    <ul>
+                        <li class="active"><a href="/lexicon"><i class="fas fa-book"></i> AI 용어사전</a></li>
+                        <li><a href="/documentation"><i class="fas fa-file-alt"></i> 문서</a></li>
+                        <li><a href="/api-reference"><i class="fas fa-code"></i> API 레퍼런스</a></li>
+                        <li><a href="/community"><i class="fas fa-comments"></i> 커뮤니티</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="globalSearch" placeholder="용어 검색...">
+                </div>
+                <div class="user-actions">
+                    <button class="btn btn-primary" id="signInBtn">로그인</button>
+                </div>
+            </header>
+
+            <div class="content-area">
+                <div class="page-header">
+                    <h1>AI 용어사전</h1>
+                    <p class="subtitle">인공지능 및 머신러닝 관련 용어와 개념을 쉽게 찾아보세요</p>
+                </div>
+                
+                <div class="search-container">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="lexiconSearch" placeholder="용어 검색...">
+                    </div>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-category="all">전체</button>
+                        <button class="filter-btn" data-category="ai">AI 기본</button>
+                        <button class="filter-btn" data-category="ml">머신러닝</button>
+                        <button class="filter-btn" data-category="dl">딥러닝</button>
+                        <button class="filter-btn" data-category="nlp">자연어 처리</button>
+                    </div>
+                </div>
+
+                <div class="cards-container" id="lexiconTerms">
+                    <!-- Lexicon terms will be loaded here -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/js/lexicon.js"></script>
+</body>
+</html>

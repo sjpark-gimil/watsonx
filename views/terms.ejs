@@ -1,0 +1,34 @@
+
+<ul class="terms">
+  <% terms.forEach(t => { %>
+    <li id="<%= (t.id || t.term) %>">
+      <strong><%= t.term %></strong><br/>
+      <small><%= t.short || '' %></small>
+    </li>
+  <% }) %>
+</ul>
+
+<div class="page-container">
+    <div class="lexicon-container">
+        <h1>AI 용어사전</h1>
+        <p class="subtitle">인공지능과 머신러닝 용어에 대한 종합 가이드</p>
+        
+        <div class="search-container">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="용어 검색...">
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">전체</button>
+                <button class="filter-btn" data-category="fundamentals">기초</button>
+                <button class="filter-btn" data-category="models">모델</button>
+                <button class="filter-btn" data-category="training">학습</button>
+                <button class="filter-btn" data-category="deployment">배포</button>
+            </div>
+        </div>
+        
+        <div class="cards-container" id="lexiconTerms">
+            <!-- Lexicon terms will be loaded here -->
+        </div>
+    </div>
+</div>
