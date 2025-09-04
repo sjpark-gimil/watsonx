@@ -1,0 +1,88 @@
+terms:
+  - id: ai
+    term_kr: 인공지능
+    term_en: AI
+    aliases: ["Artificial Intelligence"]
+    short: "컴퓨터 시스템이 인간의 지능적인 행동을 모방하도록 하는 기술"
+    category: ai
+    examples: ["챗봇", "추천 시스템", "이미지 인식"]
+
+  - id: machine-learning
+    term_kr: 머신러닝
+    term_en: Machine Learning
+    aliases: ["ML"]
+    short: "데이터를 통해 학습하고 예측하는 AI의 하위 분야"
+    category: ml
+    examples: ["지도 학습", "비지도 학습", "강화 학습"]
+
+  - id: deep-learning
+    term_kr: 딥러닝
+    term_en: Deep Learning
+    aliases: ["DL"]
+    short: "인공 신경망을 사용하는 머신러닝의 한 분야"
+    category: dl
+    examples: ["합성곱 신경망(CNN)", "순환 신경망(RNN)", "트랜스포머"]
+
+  - id: nlp
+    term_kr: 자연어 처리
+    term_en: NLP
+    aliases: ["Natural Language Processing"]
+    short: "컴퓨터가 인간의 언어를 이해하고 처리하는 기술"
+    category: nlp
+    examples: ["기계 번역", "감정 분석", "질의 응답"]
+
+  - id: neural-network
+    term_kr: 신경망
+    term_en: Neural Network
+    aliases: ["NN"]
+    short: "뉴런의 동작 원리를 모방한 알고리즘 구조"
+    category: dl
+    examples: ["순전파", "역전파", "활성화 함수"]
+
+  - id: supervised-learning
+    term_kr: 지도 학습
+    term_en: Supervised Learning
+    aliases: []
+    short: "레이블이 있는 데이터로 모델을 훈련시키는 방법"
+    category: ml
+    examples: ["분류", "회귀 분석"]
+
+  - id: unsupervised-learning
+    term_kr: 비지도 학습
+    term_en: Unsupervised Learning
+    aliases: []
+    short: "레이블 없이 데이터의 패턴을 찾는 학습 방법"
+    category: ml
+    examples: ["클러스터링", "차원 축소"]
+
+  - id: reinforcement-learning
+    term_kr: 강화 학습
+    term_en: Reinforcement Learning
+    aliases: ["RL"]
+    short: "보상을 통해 학습하는 머신러닝 방법"
+    category: ml
+    examples: ["게임 AI", "로봇 제어"]
+
+  - id: cnn
+    term_kr: 합성곱 신경망
+    term_en: CNN
+    aliases: ["Convolutional Neural Network"]
+    short: "이미지 처리에 특화된 딥러닝 모델"
+    category: dl
+    examples: ["이미지 분류", "객체 감지"]
+
+  - id: transformer
+    term_kr: 트랜스포머
+    term_en: Transformer
+    aliases: []
+    short: "자연어 처리에 혁신을 가져온 딥러닝 아키텍처"
+    category: nlp
+    examples: ["GPT", "BERT"]
+
+  - id: llm
+    term_kr: 대규모 언어 모델
+    term_en: Large Language Model
+    aliases: ["LLM", "LLMs", "foundation model"]
+    short: "Neural network trained on massive text to perform language tasks."
+    category: ai
+    examples: []

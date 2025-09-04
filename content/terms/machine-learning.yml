@@ -1,6 +1,0 @@
-id: machine-learning
-term: 머신러닝
-aliases: ["Machine Learning", "ML"]
-short: "데이터를 통해 학습하고 예측하는 AI의 하위 분야"
-category: ml
-examples: ["지도 학습", "비지도 학습", "강화 학습"]

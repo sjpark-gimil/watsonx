@@ -1,6 +1,0 @@
-id: neural-network
-term: 신경망
-aliases: ["Neural Network", "NN"]
-short: "뉴런의 동작 원리를 모방한 알고리즘 구조"
-category: dl
-examples: ["순전파", "역전파", "활성화 함수"]

@@ -1,6 +1,0 @@
-id: ai
-term: 인공지능
-aliases: ["AI", "Artificial Intelligence"]
-short: "컴퓨터 시스템이 인간의 지능적인 행동을 모방하도록 하는 기술"
-category: ai
-examples: ["챗봇", "추천 시스템", "이미지 인식"]
