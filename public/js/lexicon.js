@@ -2,70 +2,70 @@
 const terms = [
     {
         id: 1,
-        term: '인공지능 (AI)',
+        term: '인공지능\nAI',
         definition: '컴퓨터 시스템이 인간의 지능적인 행동을 모방하도록 하는 기술',
         category: 'ai',
         examples: ['챗봇', '추천 시스템', '이미지 인식']
     },
     {
         id: 2,
-        term: '머신러닝 (Machine Learning)',
+        term: '머신러닝\nMachine Learning',
         definition: '데이터를 통해 학습하고 예측하는 AI의 하위 분야',
         category: 'ml',
         examples: ['지도 학습', '비지도 학습', '강화 학습']
     },
     {
         id: 3,
-        term: '딥러닝 (Deep Learning)',
+        term: '딥러닝\nDeep Learning',
         definition: '인공 신경망을 사용하는 머신러닝의 한 분야',
         category: 'dl',
         examples: ['합성곱 신경망(CNN)', '순환 신경망(RNN)', '트랜스포머']
     },
     {
         id: 4,
-        term: '자연어 처리 (NLP)',
+        term: '자연어 처리\nNLP',
         definition: '컴퓨터가 인간의 언어를 이해하고 처리하는 기술',
         category: 'nlp',
         examples: ['기계 번역', '감정 분석', '질의 응답']
     },
     {
         id: 5,
-        term: '신경망 (Neural Network)',
+        term: '신경망\nNeural Network',
         definition: '뉴런의 동작 원리를 모방한 알고리즘 구조',
         category: 'dl',
         examples: ['순전파', '역전파', '활성화 함수']
     },
     {
         id: 6,
-        term: '지도 학습 (Supervised Learning)',
+        term: '지도 학습\nSupervised Learning',
         definition: '레이블이 있는 데이터로 모델을 훈련시키는 방법',
         category: 'ml',
         examples: ['분류', '회귀 분석']
     },
     {
         id: 7,
-        term: '비지도 학습 (Unsupervised Learning)',
+        term: '비지도 학습\nUnsupervised Learning',
         definition: '레이블 없이 데이터의 패턴을 찾는 학습 방법',
         category: 'ml',
         examples: ['클러스터링', '차원 축소']
     },
     {
         id: 8,
-        term: '강화 학습 (Reinforcement Learning)',
+        term: '강화 학습\nReinforcement Learning',
         definition: '보상을 통해 학습하는 머신러닝 방법',
         category: 'ml',
         examples: ['게임 AI', '로봇 제어']
     },
     {
         id: 9,
-        term: '합성곱 신경망 (CNN)',
+        term: '합성곱 신경망\nCNN',
         definition: '이미지 처리에 특화된 딥러닝 모델',
         category: 'dl',
         examples: ['이미지 분류', '객체 감지']
     },
     {
         id: 10,
-        term: '트랜스포머 (Transformer)',
+        term: '트랜스포머\nTransformer',
         definition: '자연어 처리에 혁신을 가져온 딥러닝 아키텍처',
         category: 'nlp',
         examples: ['GPT', 'BERT']
