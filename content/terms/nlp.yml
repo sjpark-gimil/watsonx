@@ -1,0 +1,6 @@
+id: nlp
+term: 자연어 처리
+aliases: ["NLP", "Natural Language Processing"]
+short: "컴퓨터가 인간의 언어를 이해하고 처리하는 기술"
+category: nlp
+examples: ["기계 번역", "감정 분석", "질의 응답"]

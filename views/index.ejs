@@ -1,14 +1,72 @@
-<section class="hero">
-  <h1>Watsonx Tutorials</h1>
-  <form class="search">
-    <input id="q" placeholder="Search terms, labs, pages…" autocomplete="off" />
-  </form>
-  <div id="results"></div>
-  <div class="chips" style="margin-top:1rem">
-    <a class="pill" href="/docs?product=watsonx.ai">watsonx.ai</a>
-    <a class="pill" href="/docs?product=watsonx.data">watsonx.data</a>
-    <a class="pill" href="/docs?product=watsonx.governance">watsonx.governance</a>
-  </div>
-</section>
-<script src="/public/js/search.js" defer></script>
+<h1>watsonx 플랫폼에 오신 것을 환영합니다</h1>
+<p class="subtitle">IBM의 watsonx 플랫폼으로 AI 여정을 가속화하세요</p>
 
+<!-- Watsonx Platform Solutions -->
+<div class="solutions-grid">
+    <div class="solution-card" data-category="ai">
+        <div class="solution-icon">
+            <i class="fas fa-robot"></i>
+        </div>
+        <h3>watsonx.ai</h3>
+        <p>AI 모델 배포 및 확장을 위한 엔터프라이즈 스튜디오</p>
+        <a href="/tutorials/ai" class="btn btn-outline">자세히 알아보기</a>
+    </div>
+    
+    <div class="solution-card" data-category="data">
+        <div class="solution-icon">
+            <i class="fas fa-database"></i>
+        </div>
+        <h3>watsonx.data</h3>
+        <p>통합 데이터 레이크하우스로 AI 워크로드 가속</p>
+        <a href="/tutorials/data" class="btn btn-outline">자세히 알아보기</a>
+    </div>
+    
+    <div class="solution-card" data-category="governance">
+        <div class="solution-icon">
+            <i class="fas fa-shield-alt"></i>
+        </div>
+        <h3>watsonx.governance</h3>
+        <p>AI 워크플로우 전반에 걸친 책임 있는 AI 운영</p>
+        <a href="/tutorials/governance" class="btn btn-outline">자세히 알아보기</a>
+    </div>
+</div>
+
+<div class="search-container">
+    <div class="search-box">
+        <i class="fas fa-search"></i>
+        <input type="text" id="tutorialSearch" placeholder="튜토리얼 검색...">
+    </div>
+    <div class="filter-buttons">
+        <button class="filter-btn active" data-category="all">전체</button>
+        <button class="filter-btn" data-category="watsonx.ai">watsonx.ai</button>
+        <button class="filter-btn" data-category="watsonx.data">watsonx.data</button>
+        <button class="filter-btn" data-category="watsonx.governance">watsonx.governance</button>
+        <button class="filter-btn" data-category="beginner">초보자</button>
+        <button class="filter-btn" data-category="intermediate">중급자</button>
+        <button class="filter-btn" data-category="advanced">고급</button>
+    </div>
+</div>
+
+<div class="cards-container" id="tutorialsContainer">
+    <!-- Tutorial cards will be loaded here -->
+</div>
+
+<div class="recent-updates">
+    <h2>최신 업데이트</h2>
+    <div class="update-item">
+        <div class="update-badge">New</div>
+        <div class="update-content">
+            <h4>새로운 모델: watsonx-granite-20b</h4>
+            <p>향상된 성능과 정확도를 자랑하는 최신 모델이 베타 버전으로 출시되었습니다.</p>
+            <span class="update-date">2일 전</span>
+        </div>
+    </div>
+    <div class="update-item">
+        <div class="update-badge">Updated</div>
+        <div class="update-content">
+            <h4>API 문서 개선</h4>
+            <p>새로운 예제와 개선된 내비게이션으로 API 문서가 업데이트되었습니다.</p>
+            <span class="update-date">1주 전</span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+id: cnn
+term: 합성곱 신경망
+aliases: ["CNN", "Convolutional Neural Network"]
+short: "이미지 처리에 특화된 딥러닝 모델"
+category: dl
+examples: ["이미지 분류", "객체 감지"]

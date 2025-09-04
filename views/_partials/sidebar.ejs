@@ -1,17 +1,52 @@
 <aside class="sidebar">
-    <div class="logo">watsonx tutorials</div>
-    <nav class="sidebar-nav">
-      <a href="/">Home</a>
-      <a href="/docs">All Tutorials</a>
-      <a href="/terms">Terms</a>
-    </nav>
-  
-    <div class="sidebar-section">
-      <div class="sidebar-title">Products</div>
-      <a href="/docs?product=watsonx.ai">watsonx.ai</a>
-      <a href="/docs?product=watsonx.data">watsonx.data</a>
-      <a href="/docs?product=watsonx.governance">watsonx.governance</a>
+    <div class="sidebar-header">
+        <div class="logo">
+            <i class="fas fa-robot"></i>
+            <span>watsonx</span>
+        </div>
     </div>
-  </aside>
-  
+    <nav class="sidebar-nav">
+        <div class="nav-section">
+            <div class="nav-section-title">시작하기</div>
+            <ul>
+                <li class="<%= currentPage === 'home' ? 'active' : '' %>">
+                    <a href="/"><i class="fas fa-home"></i> 홈</a>
+                </li>
+                <li class="<%= currentPage === 'setup' ? 'active' : '' %>">
+                    <a href="/setup"><i class="fas fa-sign-in-alt"></i> 설치 가이드</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-section">
+            <div class="nav-section-title">튜토리얼</div>
+            <ul>
+                <li class="<%= currentPage === 'tutorials' ? 'active' : '' %>">
+                    <a href="/tutorials"><i class="fas fa-list"></i> 모든 튜토리얼</a>
+                </li>
+                <li class="<%= currentPage === 'ai' ? 'active' : '' %>">
+                    <a href="/tutorials/ai"><i class="fas fa-robot"></i> watsonx.ai</a>
+                </li>
+                <li class="<%= currentPage === 'data' ? 'active' : '' %>">
+                    <a href="/tutorials/data"><i class="fas fa-database"></i> watsonx.data</a>
+                </li>
+                <li class="<%= currentPage === 'governance' ? 'active' : '' %>">
+                    <a href="/tutorials/governance"><i class="fas fa-shield-alt"></i> watsonx.governance</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-section">
+            <div class="nav-section-title">리소스</div>
+            <ul>
+                <li class="<%= currentPage === 'lexicon' ? 'active' : '' %>">
+                    <a href="/lexicon"><i class="fas fa-book"></i> AI 용어사전</a>
+                </li>
+                <li class="<%= currentPage === 'labs' ? 'active' : '' %>">
+                    <a href="/labs"><i class="fas fa-flask"></i> 실습실</a>
+                </li>
+                <li class="<%= currentPage === 'api' ? 'active' : '' %>">
+                    <a href="/api-reference"><i class="fas fa-code"></i> API 레퍼런스</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 </aside>

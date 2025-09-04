@@ -1,0 +1,72 @@
+<div class="page-header">
+    <h1>AI 용어사전</h1>
+    <p class="subtitle">인공지능 및 머신러닝 관련 용어와 개념을 쉽게 찾아보세요</p>
+</div>
+
+<div class="search-container">
+    <div class="search-box">
+        <i class="fas fa-search"></i>
+        <input type="text" id="lexiconSearch" placeholder="용어 검색...">
+    </div>
+    <div class="filter-buttons">
+        <button class="filter-btn active" data-category="all">전체</button>
+        <button class="filter-btn" data-category="ai">AI 기본</button>
+        <button class="filter-btn" data-category="ml">머신러닝</button>
+        <button class="filter-btn" data-category="dl">딥러닝</button>
+        <button class="filter-btn" data-category="nlp">자연어 처리</button>
+    </div>
+</div>
+
+<div class="cards-container" id="lexiconTerms">
+    <% if (terms && terms.length > 0) { %>
+        <% terms.forEach(term => { %>
+            <div class="card">
+                <div class="card-header">
+                    <h3><%= term.term %></h3>
+                    <div class="meta">
+                        <% 
+                        const categories = {
+                            'ai': 'AI 기본',
+                            'ml': '머신러닝',
+                            'dl': '딥러닝',
+                            'nlp': '자연어 처리'
+                        };
+                        %>
+                        <%= categories[term.category] || term.category %>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p><%= term.short %></p>
+                    <% if (term.examples && term.examples.length > 0) { %>
+                        <div class="examples">
+                            <strong>예시:</strong>
+                            <div class="tags">
+                                <% term.examples.forEach(example => { %>
+                                    <span class="tag"><%= example %></span>
+                                <% }); %>
+                            </div>
+                        </div>
+                    <% } %>
+                </div>
+            </div>
+        <% }); %>
+    <% } else { %>
+        <p class="no-results">용어가 없습니다.</p>
+    <% } %>
+</div>
+
+<script>
+// Get category text in Korean
+function getCategoryText(category) {
+    const categories = {
+        'ai': 'AI 기본',
+        'ml': '머신러닝',
+        'dl': '딥러닝',
+        'nlp': '자연어 처리'
+    };
+    return categories[category] || category;
+}
+
+// Initialize with server-side data
+const serverTerms = <%- JSON.stringify(terms) %>;
+</script>

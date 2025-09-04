@@ -1,0 +1,53 @@
+<div class="page-header">
+    <h1>튜토리얼</h1>
+    <p class="subtitle">watsonx 플랫폼을 활용한 다양한 튜토리얼을 확인해보세요</p>
+</div>
+
+<div class="search-container">
+    <div class="search-box">
+        <i class="fas fa-search"></i>
+        <input type="text" id="tutorialSearch" placeholder="튜토리얼 검색...">
+    </div>
+    <div class="filter-buttons">
+        <button class="filter-btn active" data-category="all">전체</button>
+        <button class="filter-btn" data-category="watsonx.ai">watsonx.ai</button>
+        <button class="filter-btn" data-category="watsonx.data">watsonx.data</button>
+        <button class="filter-btn" data-category="watsonx.governance">watsonx.governance</button>
+        <button class="filter-btn" data-category="beginner">초보자</button>
+        <button class="filter-btn" data-category="intermediate">중급자</button>
+        <button class="filter-btn" data-category="advanced">고급</button>
+    </div>
+</div>
+
+<div class="cards-container" id="tutorialsContainer">
+    <% if (tutorials && tutorials.length > 0) { %>
+        <% tutorials.forEach(tutorial => { %>
+            <div class="card">
+                <div class="card-header">
+                    <h3><a href="/tutorials/<%= tutorial.slug %>"><%= tutorial.title %></a></h3>
+                    <div class="meta">
+                        <span class="platform-tag"><%= tutorial.product %></span>
+                        <span><%= tutorial.est_minutes %>분 • <%= tutorial.level %></span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p><%= tutorial.summary %></p>
+                </div>
+                <div class="card-footer">
+                    <div class="tags-container">
+                        <% if (tutorial.tags && tutorial.tags.length > 0) { %>
+                            <% tutorial.tags.forEach(tag => { %>
+                                <span class="tag"><%= tag %></span>
+                            <% }); %>
+                        <% } %>
+                    </div>
+                    <div class="card-actions">
+                        <a href="/tutorials/<%= tutorial.slug %>" class="btn btn-primary">시작하기</a>
+                    </div>
+                </div>
+            </div>
+        <% }); %>
+    <% } else { %>
+        <p class="no-results">튜토리얼이 없습니다.</p>
+    <% } %>
+</div>

@@ -1,0 +1,6 @@
+id: supervised-learning
+term: 지도 학습
+aliases: ["Supervised Learning"]
+short: "레이블이 있는 데이터로 모델을 훈련시키는 방법"
+category: ml
+examples: ["분류", "회귀 분석"]

@@ -1,0 +1,6 @@
+id: reinforcement-learning
+term: 강화 학습
+aliases: ["Reinforcement Learning", "RL"]
+short: "보상을 통해 학습하는 머신러닝 방법"
+category: ml
+examples: ["게임 AI", "로봇 제어"]

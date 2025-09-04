@@ -1,0 +1,42 @@
+<div class="tutorial-header">
+    <div class="breadcrumb">
+        <a href="/">홈</a> > 
+        <a href="/tutorials">튜토리얼</a> > 
+        <span><%= tutorial.front.title %></span>
+    </div>
+    <h1><%= tutorial.front.title %></h1>
+    <div class="tutorial-meta">
+        <span class="platform-tag"><%= tutorial.front.product %></span>
+        <span class="level-badge"><%= tutorial.front.level %></span>
+        <span class="duration"><%= tutorial.front.est_minutes %>분</span>
+        <% if (tutorial.front.tags && tutorial.front.tags.length > 0) { %>
+            <div class="tags">
+                <% tutorial.front.tags.forEach(tag => { %>
+                    <span class="tag"><%= tag %></span>
+                <% }); %>
+            </div>
+        <% } %>
+    </div>
+    <% if (tutorial.front.summary) { %>
+        <p class="tutorial-summary"><%= tutorial.front.summary %></p>
+    <% } %>
+</div>
+
+<div class="tutorial-content">
+    <%- tutorial.content %>
+</div>
+
+<div class="tutorial-navigation">
+    <div class="nav-section">
+        <h3>관련 튜토리얼</h3>
+        <ul>
+            <% if (relatedTutorials && relatedTutorials.length > 0) { %>
+                <% relatedTutorials.forEach(related => { %>
+                    <li><a href="/tutorials/<%= related.slug %>"><%= related.title %></a></li>
+                <% }); %>
+            <% } else { %>
+                <li><a href="/tutorials">모든 튜토리얼 보기</a></li>
+            <% } %>
+        </ul>
+    </div>
+</div>

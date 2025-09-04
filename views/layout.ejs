@@ -1,19 +1,24 @@
-<!doctype html>
-<html>
-  <%- include('partials/head') %>
-  <body>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %> - Watsonx Tutorials</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
     <div class="app-container">
-      <%- include('partials/sidebar') %>
-      <main class="main">
-        <%- body %>
-      </main>
+        <%- include('_partials/sidebar') %>
+        <main class="main-content">
+            <%- include('_partials/header') %>
+            <div class="content-area">
+                <%- body %>
+            </div>
+        </main>
     </div>
-    <%- include('partials/footer') %>
-    <script src="https://unpkg.com/minisearch@7.1.0/dist/umd/index.min.js"></script>
-    <script src="/public/js/progress.js" defer></script>
-    <script src="/public/js/search.js" defer></script>
-    <script src="/public/js/term-popover.js" defer></script>
-  </body>
+    <%- include('_partials/footer') %>
+    <script src="/js/common.js"></script>
+</body>
 </html>
-
-
